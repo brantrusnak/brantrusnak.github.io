@@ -774,7 +774,7 @@ div.projects div.project div.project-content div.name {
   margin-bottom: 1em;
 }
 div.projects div.project div.project-content div.name span.in-development {
-  color: red;
+  color: chartreuse;
   font-size: 0.6em;
   vertical-align: top;
 }
@@ -875,6 +875,7 @@ section#welcome div.about {
   border-radius: 1em;
   display: grid;
   grid-auto-flow: dense;
+  border: solid 1px #727578;
 }
 section#welcome div.about div.section {
   padding: 1em;

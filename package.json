@@ -9,7 +9,7 @@
     "build:scss": "sass --no-source-map ./src/css/main.scss:./dist/index.css",
     "dev": "echo 'Not finished' & exit 0",
     "dev:ts": "tsc --watch",
-    "dev:scss": "sass --watch --no-source-map ./src/css/main.scss:./dist/index.css"
+    "dev:scss": "sass --watch --no-source-map ./src/css/main.scss:./dist/index.css --style compressed"
   },
   "author": "Brant Rusnak",
   "license": "ISC",

@@ -65,8 +65,8 @@
                             </ul>
                         </div>
                         <ul class="links">
-                            <li><a href="https://github.com/brantrusnak" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/brant-rusnak-775177120" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="https://github.com/brantrusnak" rel="noopener" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/brant-rusnak-775177120" rel="noopener" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
                             <li><a href="#contact" onclick="navigateTo(event);" data-nav-id="contact" class="nav-item"><i class="far fa-envelope fa-2x"></i></a></li>
                         </ul>
                     </div>
@@ -98,8 +98,8 @@
                                 <li class="tech">TypeScript</li>
                                 <li class="tech">Sequelize</li>
                             </ul>
-                            <a href="https://github.com/brantrusnak/tlkr-api" target="_blank"><button><i class="fas fa-code"></i> API Source</button></a>
-                            <a href="https://github.com/brantrusnak/tlkr-ui" target="_blank"><button><i class="fas fa-code"></i> UI Source</button></a>
+                            <a href="https://github.com/brantrusnak/tlkr-api" rel="noopener" target="_blank"><button><i class="fas fa-code"></i> API Source</button></a>
+                            <a href="https://github.com/brantrusnak/tlkr-ui" rel="noopener" target="_blank"><button><i class="fas fa-code"></i> UI Source</button></a>
                         </div>
                     </div>
 
@@ -114,7 +114,7 @@
                                 <li class="tech">CSS3</li>
                                 <li class="tech">JavaScript</li>
                             </ul>
-                            <a href="https://github.com/brantrusnak/keyframe-delay-generator" target="_blank"><button><i class="fas fa-code"></i> Source</button></a>
+                            <a href="https://github.com/brantrusnak/keyframe-delay-generator" rel="noopener" target="_blank"><button><i class="fas fa-code"></i> Source</button></a>
                         </div>
                     </div>
 
@@ -276,18 +276,24 @@
                 <form onsubmit="handleSubmit(event)">
                     
                     <div class="field">
-                        <label>Name</label>
-                        <input placeholder="Your name..." onchange="handleChange(event)" type="text" name="name" autocomplete="off" required>
+                        <label>
+                            Name
+                            <input placeholder="Your name..." onchange="handleChange(event)" type="text" name="name" autocomplete="off" required>
+                        </label>
                     </div>
 
                     <div class="field">
-                        <label>Email</label>
-                        <input placeholder="Your email..." onchange="handleChange(event)" type="email" name="email" autocomplete="off" required>
+                        <label>
+                            Email
+                            <input placeholder="Your email..." onchange="handleChange(event)" type="email" name="email" autocomplete="off" required>
+                        </label>
                     </div>
 
                     <div class="field">
-                        <label>Message</label>
-                        <textarea placeholder="Your message..." onchange="handleChange(event)" name="message" rows="3" autocomplete="off" required></textarea>
+                        <label>
+                            Message
+                            <textarea placeholder="Your message..." onchange="handleChange(event)" name="message" rows="3" autocomplete="off" required></textarea>
+                        </label>
                     </div>
 
                     <div class="field">

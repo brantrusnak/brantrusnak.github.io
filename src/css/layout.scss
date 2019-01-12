@@ -7,17 +7,18 @@ body {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
-  footer{
+  footer {
     text-align: center;
     background-color: #28313a;
     padding: 2em 2em;
     font-weight: 300;
     text-transform: uppercase;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
   }
 }
 
 /* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
   body {
     grid-template: 100vh / auto;
@@ -25,6 +26,7 @@ body {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
+
 @media only screen and (min-width: 600px) {
   body {
     grid-template: 100vh / auto;
@@ -32,6 +34,7 @@ body {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px) {
   body {
     grid-template: 100vh / auto;
@@ -39,6 +42,7 @@ body {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width: 992px) {
   body {
     grid-template: 100vh auto / 20em auto;
@@ -46,6 +50,7 @@ body {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+
 @media only screen and (min-width: 1200px) {
   body {
     grid-template: 100vh auto / 20em auto;

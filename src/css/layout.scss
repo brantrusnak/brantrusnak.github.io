@@ -3,7 +3,9 @@ body {
   display: grid;
   color: $text-color;
   main {
-    overflow: auto;
+    // overflow: auto;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
   footer{
     text-align: center;

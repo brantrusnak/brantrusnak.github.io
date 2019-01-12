@@ -1,0 +1,292 @@
+nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: $highlight;
+  height: 100vh;
+  overflow: hidden;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  -webkit-transition: width 0.3s ease-in;
+  transition: width 0.3s ease-in;
+  &:after {
+    content: "  ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 3px;
+    background: -webkit-gradient( linear, left bottom, left top, from(#5e2bff), color-stop(#ee6352), color-stop(#81f4e1), color-stop(#c04cfd), to(#fc6dab));
+    background: linear-gradient( 0deg, #5e2bff, #ee6352, #81f4e1, #c04cfd, #fc6dab);
+    background-size: 1000% 1000%;
+    -webkit-animation: gradientShift 8s ease-in-out infinite;
+    animation: gradientShift 8s ease-in-out infinite;
+  }
+  div.close-nav {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 1.4em;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  div.nav-container {
+    display: grid;
+    height: 65%;
+    grid-template: 2fr repeat(4, 1fr) / 1fr;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    div.nav-title {
+      font-size: 2em;
+      text-transform: uppercase;
+      font-family: 'Source Code Pro', monospace;
+      font-weight: 300;
+      overflow: hidden;
+      margin: 0 auto;
+      border-right: 2px solid transparent;
+      width: 0;
+      -webkit-transition: width 1s;
+      transition: width 1s;
+      &.type {
+        -webkit-animation: type 2s steps(60) 0.3s 1 normal both, blinkCursor 1200ms steps(60) infinite normal;
+        animation: type 2s steps(60) 0.3s 1 normal both, blinkCursor 1200ms steps(60) infinite normal;
+      }
+      &.erase {
+        -webkit-animation: erase 1s steps(60) 0.3s 1 normal both, blinkCursor 1200ms steps(60) infinite normal;
+        animation: erase 1s steps(60) 0.3s 1 normal both, blinkCursor 1200ms steps(60) infinite normal;
+      }
+    }
+    a.nav-item {
+        text-decoration: none;
+      margin: 10px 1em 10px 0;
+      font-size: 1.4em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+      padding-right: 1em;
+      text-transform: uppercase;
+      font-weight: 300;
+      -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+      color: rgba(255, 255, 255, 0.6);
+      cursor: pointer;
+      min-height: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      min-width: 225px;
+      &:hover,
+      &.active {
+        color: rgba(255, 255, 255, 1);
+        border-color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
+
+#toggler.nav-toggler {
+  position: fixed;
+  font-size: 1.4em;
+  z-index: 10;
+  cursor: pointer;
+  margin: 1em 2em 0 0;
+  top: 0;
+  right: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  nav {
+    position: fixed;
+    width: 0vw;
+    &.open {
+      width: 100vw;
+    }
+    div.close-nav {
+      display: block;
+    }
+    div.nav-container {
+      min-width: 33.33%;
+    }
+  }
+  div.nav-toggler {
+    display: block;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+  nav {
+    position: fixed;
+    width: 0vw;
+    &.open {
+      width: 100vw;
+    }
+    div.close-nav {
+      display: block;
+    }
+    div.nav-container {
+      min-width: 33.33%;
+    }
+  }
+  div.nav-toggler {
+    display: block;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    width: 0vw;
+    &.open {
+      width: 100vw;
+    }
+    div.close-nav {
+      display: block;
+    }
+    div.nav-container {
+      min-width: 33.33%;
+    }
+  }
+  div.nav-toggler {
+    display: block;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+  nav {
+    position: relative;
+    width: auto;
+    &.open {
+      width: auto;
+    }
+    div.close-nav {
+      display: none;
+    }
+    div.nav-container {
+      min-width: 75%;
+    }
+  }
+  div.nav-toggler {
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+  nav {
+    position: relative;
+    width: auto;
+    &.open {
+      width: auto;
+    }
+    div.close-nav {
+      display: none;
+    }
+    div.nav-container {
+      min-width: 75%;
+    }
+  }
+  div.nav-toggler {
+    display: none;
+  }
+}
+
+@-webkit-keyframes gradientShift {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes erase {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes erase {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blinkCursor {
+  from {
+    border-right-color: rgb(255, 255, 255);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgb(255, 255, 255);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}

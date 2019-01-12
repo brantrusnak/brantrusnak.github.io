@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="#28313A"/>
+        
+        <meta name="Description" content="Brant Rusnak Portfolio, Front End Developer">
+
+        <title>Brant Rusnak</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/site.webmanifest">
+        
+        <link rel="stylesheet" type="text/css" media="screen" href="dist/index.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        
+        <div id="toggler" onclick="toggleNav();" class="nav-toggler">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav>
+            <div onclick="toggleNav();" class="close-nav">X</div>
+            <div class="nav-container">
+                <div class="nav-title">Brant Rusnak</div>
+                <a href="#welcome" onclick="toggleNav(); navigateTo(event);" data-nav-id="welcome" class="nav-item">Welcome</a>
+                <a href="#projects" onclick="toggleNav(); navigateTo(event);" data-nav-id="projects" class="nav-item">Projects</a>
+                <a href="#skills" onclick="toggleNav(); navigateTo(event);"  data-nav-id="skills" class="nav-item">Toolkit</a>
+                <a href="#contact" onclick="toggleNav(); navigateTo(event);" data-nav-id="contact" class="nav-item">Contact</a>
+            </div>
+        </nav>
+
+        <main>
+            <section id="welcome">
+                <div class="about">
+                    <div class="section">
+                        <div class="name">Brant Rusnak</div>
+                        <div class="info">
+                            I love to
+                            <ul class="likes">
+                                <li class="pusher"></li>
+                                <li class="like">grow my beard.</li>
+                                <li class="like">play bass guitar.</li>
+                                <li class="like">code web apps.</li>
+                                <li class="like">make kombucha.</li>
+                                <li class="like">explore new tech.</li>
+                                <li class="like">garden.</li>
+                                <li class="like">play video games.</li>
+                                <li class="like">make wine.</li>
+                                <li class="like">explore new arts.</li>
+                                <li class="like">listen to music.</li>
+                            </ul>
+                        </div>
+                        <ul class="links">
+                            <li><a href="https://github.com/brantrusnak" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/brant-rusnak-775177120" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="#contact" onclick="navigateTo(event);" data-nav-id="contact" class="nav-item"><i class="far fa-envelope fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <img class="profile" src="./assets/img/brant.jpg" alt="Brant Rusnak">
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <h1>Projects</h1>
+
+                <div class="projects">
+
+                    <div class="project">
+                        <div class="project-content">
+                            <div class="name">tlkr. <span class="in-development">WIP</span></div>
+                            <p class="info">
+                                tlkr. was a project that I always wanted to do, to create my own social media site. Before I started this project, I set some constraints. Because I'm more familiar with Angular and Java, I wanted to break that chain and decided to use React and NodeJS. I wanted to use MongoDB for the project, but I decided that MySQL along with an ORM had a better use case here.
+                            </p>
+                            <ul class="tech-used">
+                                <li class="tech">HTML5</li>
+                                <li class="tech">CSS3</li>
+                                <li class="tech">React</li>
+                                <li class="tech">Redux</li>
+                                <li class="tech">NodeJS</li>
+                                <li class="tech">Express</li>
+                                <li class="tech">Passport.js</li>
+                                <li class="tech">MySQL</li>
+                                <li class="tech">TypeScript</li>
+                                <li class="tech">Sequelize</li>
+                            </ul>
+                            <a href="https://github.com/brantrusnak/tlkr-api" target="_blank"><button><i class="fas fa-code"></i> API Source</button></a>
+                            <a href="https://github.com/brantrusnak/tlkr-ui" target="_blank"><button><i class="fas fa-code"></i> UI Source</button></a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-content">
+                            <div class="name">CSS Keyframe Delay Generator</div>
+                            <p class="info">
+                                I developed this tool to assist in the generation of CSS keyframes with animation timings, delays/pauses, and states. CSS animations can only be delayed at the start, so to delay you have to break the keyframe into 2 steps, the first being the animation time and the second being the delay time. This tool does the math and typing required in calculating seconds to percentages in keyframes. I used this to generate the "I love to" animation in the about card above.
+                            </p>
+                            <ul class="tech-used">
+                                <li class="tech">HTML5</li>
+                                <li class="tech">CSS3</li>
+                                <li class="tech">JavaScript</li>
+                            </ul>
+                            <a href="https://github.com/brantrusnak/keyframe-delay-generator" target="_blank"><button><i class="fas fa-code"></i> Source</button></a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                            <div class="project-content">
+                                <div class="name">Topics</div>
+                                <p class="info">
+                                    Topics is an SEO startup that wants to do all the work for you. I was placed as the lead developer in charge of the user interface. I used Angular, Angular CLI, TypeScript, and SASS to write components, services, and admin utilities. Whenever the UI was ahead, I would jump to the back end and assist with code written in Java using the Spring framework.
+                                </p>
+                                <ul class="tech-used">
+                                    <li class="tech">HTML5</li>
+                                    <li class="tech">CSS3</li>
+                                    <li class="tech">SASS</li>
+                                    <li class="tech">Angular</li>
+                                    <li class="tech">Java</li>
+                                    <li class="tech">MySQL</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    <div class="project">
+                        <div class="project-content">
+                            <div class="name">theLandscape</div>
+                            <p class="info">
+                                I was invited to join theLandscape, an SEO startup. This was the first real project that I helped create with a group of friends and some new faces. After some time of jumping between creating UI components, writing unit tests for Java, debugging PHP code and reading hours of documentation for Apache Thrift, I found my spot on the front end using AngularJS designing and developing components.
+                            </p>
+                            <ul class="tech-used">
+                                <li class="tech">HTML5</li>
+                                <li class="tech">CSS3</li>
+                                <li class="tech">AngularJS</li>
+                                <li class="tech">Java</li>
+                                <li class="tech">PHP</li>
+                                <li class="tech">Apache Thrift</li>
+                                <li class="tech">MySQL</li>
+                                <li class="tech">MongoDB</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <section id="skills">
+                <h1>Toolkit</h1>
+
+                <h2>Software</h2>
+                <div class="skills">
+                    
+                    <div class="skill">
+                        <img src="./assets/img/vscode.png" alt="Visual Studio Code" class="skill-icon" />
+                        <h3>VS Code</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/idea.png" alt="IntelliJ IDEA" class="skill-icon" />
+                        <h3>IntelliJ IDEA</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/tux.png" alt="Linux" class="skill-icon" />
+                        <h3>Linux</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/git.png" alt="Git" class="skill-icon" />
+                        <h3>Git</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/github.png" alt="GitHub" class="skill-icon" />
+                        <h3>GitHub</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/postman.png" alt="Postman" class="skill-icon" />
+                        <h3>Postman</h3>
+                    </div>
+
+                </div>
+                <h2>Front-end</h2>
+                <div class="skills">
+                    <div class="skill">
+                        <img src="./assets/img/html.png" alt="HTML5" class="skill-icon" />
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/css.png" alt="CSS" class="skill-icon" />
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/sass.png" alt="SASS" class="skill-icon" />
+                        <h3>SASS</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/js.png" alt="JavaScript" class="skill-icon" />
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/ts.png" alt="TypeScript" class="skill-icon" />
+                        <h3>TypeScript</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/webpack.png" alt="Webpack" class="skill-icon" />
+                        <h3>Webpack</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/angular.png" alt="Angular" class="skill-icon" />
+                        <h3>Angular</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/react.png" alt="React" class="skill-icon" />
+                        <h3>React</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/redux.png" alt="Redux" class="skill-icon" />
+                        <h3>Redux</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/bootstrap.svg" alt="Bootstrap" class="skill-icon" />
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/bulma.svg" alt="Bulma" class="skill-icon" />
+                        <h3>Bulma</h3>
+                    </div>
+                    <div class="skill">
+                        <!-- <img src="./assets/img/redux.png" alt="Redux" class="skill-icon" /> -->
+                        <h3>More to come...</h3>
+                    </div>
+                </div>
+
+                <h2>Back-end</h2>
+                <div class="skills">
+                    <div class="skill">
+                        <img src="./assets/img/java.png" alt="Java" class="skill-icon" />
+                        <h3>Java</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/nodejs.png" alt="NodeJS" class="skill-icon" />
+                        <h3>NodeJS</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/python.png" alt="Python" class="skill-icon" />
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/apache.png" alt="Apache" class="skill-icon" />
+                        <h3>Apache</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/mysql.png" alt="MySQL" class="skill-icon" />
+                        <h3>MySQL</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="./assets/img/mongo.png" alt="MongoDB" class="skill-icon" />
+                        <h3>MongoDB</h3>
+                    </div>
+                </div>
+
+            </section>
+            <section id="contact">
+                <h1>Contact</h1>
+
+                <form onsubmit="handleSubmit(event)">
+                    
+                    <div class="field">
+                        <label>Name</label>
+                        <input placeholder="Your name..." onchange="handleChange(event)" type="text" name="name" autocomplete="off" required>
+                    </div>
+
+                    <div class="field">
+                        <label>Email</label>
+                        <input placeholder="Your email..." onchange="handleChange(event)" type="email" name="email" autocomplete="off" required>
+                    </div>
+
+                    <div class="field">
+                        <label>Message</label>
+                        <textarea placeholder="Your message..." onchange="handleChange(event)" name="message" rows="3" autocomplete="off" required></textarea>
+                    </div>
+
+                    <div class="field">
+                        <button type="submit">Submit</button>
+                    </div>
+
+                </form>
+
+            </section>
+            <footer>Copyright &copy; 2019 Brant Rusnak</footer>
+        </main>
+
+
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+        <script type="text/javascript">(function(){emailjs.init("user_dts5X8Lf3grKYAWx65yis");})();</script>
+        <script src="./dist/index.js"></script>
+    </body>
+
+</html>

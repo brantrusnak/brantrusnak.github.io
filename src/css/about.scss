@@ -1,0 +1,202 @@
+section#welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  div.about {
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin: auto;
+    width: 90%;
+    background-color: #28313a;
+    border-radius: 1em;
+    display: grid;
+    grid-auto-flow: dense;
+
+    div.section {
+      padding: 1em;
+      height: 100%;
+      width: 100%;
+      display: grid;
+      -ms-flex-line-pack: center;
+      align-content: center;
+
+      &:last-of-type {
+        justify-items: center;
+      }
+
+      div.name {
+        font-size: 2em;
+        text-transform: uppercase;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 300;
+        margin: 1em 0;
+        text-align: center;
+      }
+      
+      div.info{
+        white-space: nowrap;
+        font-weight: 300;
+        margin: 1em 0;
+        text-align: center;
+      }
+
+      img.profile {
+        max-width: 12em;
+        border-radius: 25%;
+      }
+      ul.likes{
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: 19px;
+        vertical-align: top;
+        li.pusher{
+          animation: adjustMargin 40s infinite;
+        }
+        li.like{
+          text-align: left;
+          height: 25px;
+        }
+      }
+      ul.links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 1em 0;
+        li {
+          color: rgba(255, 255, 255, 0.6);
+          -webkit-box-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          text-align: center;
+          
+          a{
+            display: inline-block;
+
+            i{
+              cursor: pointer;
+              pointer-events: none;
+              -webkit-transition: color 0.3s ease-in-out;
+              transition: color 0.3s ease-in-out;
+              &:hover {
+                color: rgba(255, 255, 255, 1)
+              }
+            }
+          }
+
+
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  section#welcome div.about {
+    grid-template: 1fr / 1fr;
+    div.section{
+      grid-row: 2;
+      &:last-child{
+        grid-row: 1;
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  section#welcome div.about {
+    grid-template: 1fr / 1fr;
+    div.section{
+      grid-row: 2;
+      &:last-child{
+        grid-row: 1;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  section#welcome div.about {
+    grid-template: 1fr / 2fr 1fr;
+    div.section{
+      grid-row: 1;
+      &:last-child {
+        grid-row: 1;
+        border-left: 1px solid $border;
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  section#welcome div.about {
+    grid-template: 1fr / 2fr 1fr;
+    div.section{
+      grid-row: 1;
+      &:last-child {
+        grid-row: 1;
+        border-left: 1px solid $border;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  section#welcome div.about {
+    grid-template: 1fr / 2fr 1fr;
+    div.section{
+      grid-row: 1;
+      &:last-child {
+        grid-row: 1;
+        border-left: 1px solid $border;
+      }
+    }
+  }
+}
+
+@keyframes adjustMargin {
+	0%{
+    margin-top: -225px;
+	}
+	2.50%,10.00%{
+    margin-top: 0px;
+	}
+	12.50%,20.00%{
+    margin-top: -25px;
+	}
+	22.50%,30.00%{
+    margin-top: -50px;
+	}
+	32.50%,40.00%{
+    margin-top: -75px;
+	}
+	42.50%,50.00%{
+    margin-top: -100px;
+	}
+	52.50%,60.00%{
+    margin-top: -125px;
+	}
+	62.50%,70.00%{
+    margin-top: -150px;
+	}
+	72.50%,80.00%{
+    margin-top: -175px;
+	}
+	82.50%,90.00%{
+    margin-top: -200px;
+	}
+	92.50%,100.00%{
+    margin-top: -225px;
+	}
+}

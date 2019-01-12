@@ -1,0 +1,17 @@
+button {
+  color: $text-color;
+  background: $highlight;
+  border: none;
+  padding: 1em 1em;
+  border: 1px solid $border;
+  border-radius: 2em;
+  min-width: 200px;
+  margin: 1em 0;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  &:hover {
+    color: $highlight;
+    background-color: $text-color;
+  }
+}

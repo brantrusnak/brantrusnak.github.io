@@ -42,8 +42,9 @@ section#welcome {
       }
 
       img.profile {
-        max-width: 12em;
-        border-radius: 25%;
+        border-radius: 3%;
+        max-width: 100%;
+        max-height: 30em;
       }
       ul.likes{
         display: inline-block;

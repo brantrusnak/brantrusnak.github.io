@@ -11,7 +11,7 @@ nav {
   align-items: center;
   background-color: $highlight;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   white-space: nowrap;
   left: 0;
   top: 0;
@@ -95,7 +95,9 @@ nav {
         border-color: rgba(255, 255, 255, 1);
       }
 
-      &.contact-button{
+      span{
+        display: inline;
+        pointer-events: none;
         background: -webkit-gradient( linear, left bottom, left top, from(#5e2bff), color-stop(#ee6352), color-stop(#81f4e1), color-stop(#c04cfd), to(#fc6dab));
         background: linear-gradient( 0deg, #5e2bff, #ee6352, #81f4e1, #c04cfd, #fc6dab);
         background-size: 1000% 1000%;

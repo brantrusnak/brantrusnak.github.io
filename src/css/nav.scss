@@ -94,6 +94,26 @@ nav {
         color: rgba(255, 255, 255, 1);
         border-color: rgba(255, 255, 255, 1);
       }
+
+      &.contact-button{
+        background: -webkit-gradient( linear, left bottom, left top, from(#5e2bff), color-stop(#ee6352), color-stop(#81f4e1), color-stop(#c04cfd), to(#fc6dab));
+        background: linear-gradient( 0deg, #5e2bff, #ee6352, #81f4e1, #c04cfd, #fc6dab);
+        background-size: 1000% 1000%;
+        -webkit-animation: gradientShift 8s ease-in-out infinite;
+        animation: gradientShift 8s ease-in-out infinite;
+        padding: 1rem 0;
+        border-radius: 2em;
+        justify-content: center;
+        text-shadow: 2px 2px gray;
+        border: none;
+        color: rgba(255, 255, 255, 1);
+
+        &:hover{
+          
+        }
+
+      }
+
     }
   }
 }

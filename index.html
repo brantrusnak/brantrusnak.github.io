@@ -36,15 +36,15 @@
             <div onclick="toggleNav();" class="close-nav">X</div>
             <div class="nav-container">
                 <div class="nav-title">Brant Rusnak</div>
-                <a href="#welcome" onclick="toggleNav(); navigateTo(event);" data-nav-id="welcome" class="nav-item">Welcome</a>
+                <a href="#about" onclick="toggleNav(); navigateTo(event);" data-nav-id="about" class="nav-item">About</a>
                 <a href="#projects" onclick="toggleNav(); navigateTo(event);" data-nav-id="projects" class="nav-item">Projects</a>
                 <a href="#skills" onclick="toggleNav(); navigateTo(event);"  data-nav-id="skills" class="nav-item">Toolkit</a>
-                <a href="#contact" onclick="toggleNav(); navigateTo(event);" data-nav-id="contact" class="nav-item">Contact</a>
+                <a href="#contact" onclick="toggleNav(); navigateTo(event);" data-nav-id="contact" class="nav-item">Contact Me</a>
             </div>
         </nav>
 
         <main>
-            <section id="welcome">
+            <section id="about">
                 <div class="about">
                     <div class="section">
                         <div class="name">Brant Rusnak</div>
@@ -67,7 +67,7 @@
                         <ul class="links">
                             <li><a href="https://github.com/brantrusnak" rel="noopener" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/brantrusnak" rel="noopener" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                            <li><a href="#contact" onclick="navigateTo(event);" data-nav-id="contact" class="nav-item"><i class="far fa-envelope fa-2x"></i></a></li>
+                            <li><a href="#contact" onclick="navigateTo(event);" data-nav-id="contact"><i class="fas fa-envelope fa-2x"></i></a></li>
                         </ul>
                     </div>
                     <div class="section">
@@ -103,7 +103,7 @@
                         <div class="project-content">
                             <div class="name">tlkr. <span class="in-development">WIP</span></div>
                             <p class="info">
-                                tlkr. was a project that I always wanted to do, to create my own social media site. Before I started this project, I set some constraints. Because I'm more familiar with Angular and Java, I wanted to break that chain and decided to use React and NodeJS. I wanted to use MongoDB for the project, but I decided that MySQL along with an ORM had a better use case here.
+                                tlkr. was a project that I always wanted to do, to create my own social media site. Before I started this project, I set some constraints. Because I'm more familiar with Angular and Java, I wanted to break that chain and decided to use React and NodeJS. Initially, I planned on using MongoDB, but I found that the best use case called for MySQL along with an ORM.
                             </p>
                             <ul class="tech-used">
                                 <li class="tech">HTML5</li>
@@ -117,7 +117,7 @@
                                 <li class="tech">TypeScript</li>
                                 <li class="tech">Sequelize</li>
                             </ul>
-                            <a href="https://github.com/brantrusnak/tlkr-api" rel="noopener" target="_blank"><button><i class="fas fa-code"></i> API Source</button></a>
+                            <a href="https://github.com/brantrusnak/tlkr-api" rel="noopener" target="_blank"><button><i class="fas fa-code"></i> Backend Source</button></a>
                             <a href="https://github.com/brantrusnak/tlkr-ui" rel="noopener" target="_blank"><button><i class="fas fa-code"></i> UI Source</button></a>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                         <div class="project-content">
                             <div class="name">CSS Keyframe Delay Generator</div>
                             <p class="info">
-                                I developed this tool to assist in the generation of CSS keyframes with animation timings, delays/pauses, and states. CSS animations can only be delayed at the start, so to delay you have to break the keyframe into 2 steps, the first being the animation time and the second being the delay time. This tool does the math and typing required in calculating seconds to percentages in keyframes. I used this to generate the "I love to" animation in the about card above.
+                                I developed this tool to assist in the generation of CSS keyframes with animation timings, delays/pauses, and states. Vanilla CSS animations can only be delayed at the start - So to delay the animation, you have to break the keyframe into 2 steps. The first step being the animation time and the second being the delay time. This tool does the math to calculate seconds to percentages in keyframes and generates a template for you. I used this tool to generate the animations in the About Card above.
                             </p>
                             <ul class="tech-used">
                                 <li class="tech">HTML5</li>
@@ -141,7 +141,7 @@
                             <div class="project-content">
                                 <div class="name">Topics</div>
                                 <p class="info">
-                                    Topics is an SEO startup that wants to do all the work for you. I was placed as the lead developer in charge of the user interface. I used Angular, Angular CLI, TypeScript, and SASS to write components, services, and admin utilities. Whenever the UI was ahead, I would jump to the back end and assist with code written in Java using the Spring framework.
+                                    Topics is a separate user-facing application that utilizes theLandscape's back end technology. We created this tool to address a specific need within the scope of SEO - to give detailed suggestions on how to produce meaningful content that ranks in organic search. I developed a completely separate UI for this project, including an interactive text editor that gives suggestions to content producers in real time.
                                 </p>
                                 <ul class="tech-used">
                                     <li class="tech">HTML5</li>
@@ -158,7 +158,7 @@
                         <div class="project-content">
                             <div class="name">theLandscape</div>
                             <p class="info">
-                                I was invited to join theLandscape, an SEO startup. This was the first real project that I helped create with a group of friends and some new faces. After some time of jumping between creating UI components, writing unit tests for Java, debugging PHP code and reading hours of documentation for Apache Thrift, I found my spot on the front end using AngularJS designing and developing components.
+                                I was the lead UI developer for theLandscape, an SEO software startup. I worked with product designers, and back end engineers to develop the UI from scratch using technologies such as Angular, TypeScript and SCSS. I assumed responsibility for the technology and implementation decisions so as to best meet our business objectives. Occasionally, I hopped over to the back end to assist in development using Java with the Spring Framework.
                             </p>
                             <ul class="tech-used">
                                 <li class="tech">HTML5</li>
@@ -326,9 +326,9 @@
         </main>
 
 
-        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js" async></script>
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
         <script type="text/javascript" async>(function(){emailjs.init("user_dts5X8Lf3grKYAWx65yis");})();</script>
-        <script src="./dist/index.js" async></script>
+        <script src="./dist/index.js"></script>
     </body>
 
 </html>

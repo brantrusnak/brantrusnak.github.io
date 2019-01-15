@@ -55,7 +55,7 @@ main.addEventListener("scroll", function (event) {
         if (section.offsetTop <= Math.floor(main.scrollTop + 32) &&
             section.offsetTop + section.offsetHeight > Math.floor(main.scrollTop + 32)) {
             currentSection = section;
-            if (section.id === 'welcome') {
+            if (section.id === 'about') {
                 navTitle.classList.remove('type');
                 navTitle.classList.add('erase');
                 setTimeout(function () {

@@ -1,4 +1,4 @@
-section#welcome {
+section#about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +95,7 @@ section#welcome {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
-  section#welcome div.about {
+  section#about div.about {
     grid-template: 1fr / 1fr;
     div.section {
       grid-row: 2;
@@ -109,7 +109,7 @@ section#welcome {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
-  section#welcome div.about {
+  section#about div.about {
     grid-template: 1fr / 1fr;
     div.section {
       grid-row: 2;
@@ -123,7 +123,7 @@ section#welcome {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-  section#welcome div.about {
+  section#about div.about {
     grid-template: 1fr / 2fr 1fr;
     div.section {
       grid-row: 1;
@@ -138,7 +138,7 @@ section#welcome {
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
-  section#welcome div.about {
+  section#about div.about {
     grid-template: 1fr / 2fr 1fr;
     div.section {
       grid-row: 1;
@@ -153,7 +153,7 @@ section#welcome {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-  section#welcome div.about {
+  section#about div.about {
     grid-template: 1fr / 2fr 1fr;
     div.section {
       grid-row: 1;

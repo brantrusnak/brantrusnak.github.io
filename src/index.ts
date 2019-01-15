@@ -53,7 +53,7 @@ main.addEventListener("scroll", event => {
         ) {
             currentSection = section;
             
-            if(section.id === 'welcome') {
+            if(section.id === 'about') {
                 navTitle.classList.remove('type');
                 navTitle.classList.add('erase');
 

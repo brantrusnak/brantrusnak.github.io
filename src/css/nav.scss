@@ -101,17 +101,11 @@ nav {
         background-size: 1000% 1000%;
         -webkit-animation: gradientShift 8s ease-in-out infinite;
         animation: gradientShift 8s ease-in-out infinite;
-        padding: 1rem 0;
-        border-radius: 2em;
-        justify-content: center;
-        text-shadow: 2px 2px gray;
-        border: none;
         color: rgba(255, 255, 255, 1);
-
-        &:hover{
-          
-        }
-
+        font-weight: 700;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
     }
